@@ -2,6 +2,8 @@
 
 This RShiny was developed to plot, ID, and save data from Imaginex853 echosounders deployed on Slocum Electric Gliders in the austral summer of 2020 as part of Project SWARM. A paper is currently in prep to Scientific Reports to describe this app and the data it collected in terms of diel vertical migration behaviors of zooplankton in Palmer Deep Canyon. A DOI will be published here upon acceptance and publication. This app is available to serve as a framework for similar projects and datasets. 
 
+Both the full app (app_full.R) and an example app (app_example.R) along with example data are provided in this repository. Due to the size of the data analyzed in the app, it is not possible to host the full dataset on GitHub, but a subset of the data are provided so that a smaller version of the app can be downloaded from this repository and examined. 
+
 This app has 3 steps: 
 1) Select data and plot - data are subsetted based on platform (UD vs UAF glider) and time (see note below), depth (0 - 1100 m, based on the instrument), dB threshold (determines color; defaults to 100 dB to include all possible returns), starting time of the plot, how many hours after the start time to include in the plot, and how many bins to remove from the top of the ping (Imaginex835 has 200, 0.5 m bins; this removes a number of bins [in bin #, not depth] from the top of the ping to reduce noise. 8 is the default). 
     	
@@ -15,3 +17,4 @@ This app has 3 steps:
             correctedDepth = (BinNumber * 0.5) * cos(gliderPitch - 22) + gliderDepth
 
 3) Save data - Clicking the "Download Data" button will save the highlighted subset of the data to the local machine with the platform name and a numerical local timestamp. These downloaded csvs can then be compiled together, and matched to the glider data to determine the presence/absence of krill swarms.  
+
