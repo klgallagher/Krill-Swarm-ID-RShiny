@@ -1,6 +1,6 @@
 # Krill-Swarm-ID-RShiny
 
-This RShiny was developed to plot, ID, and save data from Imaginex853 echosounders deployed on Slocum Electric Gliders in the austral summer of 2020 as part of Project SWARM. A paper is currently in prep to Scientific Reports to describe this app and the data it collected in terms of diel vertical migration behaviors of zooplankton in Palmer Deep Canyon. A DOI will be published here upon acceptance and publication. This app is available to serve as a framework for similar projects and datasets. 
+This RShiny was developed to plot, ID, and save data from Imaginex853 echosounders deployed on Slocum Electric Gliders in the austral summer of 2020 as part of Project SWARM. This app is available to serve as a framework for similar projects and datasets. 
 
 Both the full app (app_full.R) and an example app (app_example.R) along with example data are provided in this repository. Due to the size of the data analyzed in the app, it is not possible to host the full dataset on GitHub, but a subset of the data are provided so that a smaller version of the app can be downloaded from this repository and examined. To test the example version of the app, download app_example.R and all provided .RData files. You will need to edit the file paths in app_example to direct the app to these files on your local machine. In the script, these areas are denoted as '/INSERT/PATH/TO/[filename].RData'. 
 
